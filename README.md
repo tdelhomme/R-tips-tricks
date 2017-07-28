@@ -17,3 +17,5 @@
   1. [Stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/stacked_barplot.r): boxplot with respect to two factors  
 
 ![stacked_barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/examples/stacked_barplot.png)
+
+  2. [multiple plot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/multiplot.r) : function to plot multiple panels with ggplot2

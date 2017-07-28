@@ -1,4 +1,4 @@
-# stacked boxplot with ggplot2
+# stacked barplot with ggplot2
 library(ggpubr)
 library(ggsci)
 

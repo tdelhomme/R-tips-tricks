@@ -14,7 +14,7 @@
 
   ## Pretty plots with ggplot 2
 
-  1. [Stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/stacked_barplot.r): boxplot with respect to two factors  
+  1. [Stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/stacked_barplot.r): barplot with respect to two factors  
 
 ![stacked_barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/examples/stacked_barplot.png)
 

@@ -14,7 +14,7 @@ df_transform <- function(df, classes, subclasses){
 }
 
 
-df=df_transform(ctDNA_dataset_disc_df[which(ctDNA_dataset_disc$SCLC_status==1),], myclasses, mysubclasses)
+df=df_transform(dataframe, myclasses, mysubclasses)
 p = ggbarplot(df, x = "cl", y = "len",
           fill = "scl", color = "scl",
           label = TRUE, lab.col = "white", lab.pos = "in", palette = "NPG", legend.title=mysubclasses,

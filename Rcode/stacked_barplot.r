@@ -17,6 +17,6 @@ df_transform <- function(df, classes, subclasses){
 df=df_transform(dataframe, myclasses, mysubclasses)
 p = ggbarplot(df, x = "cl", y = "len",
           fill = "scl", color = "scl",
-          label = TRUE, lab.col = "white", lab.pos = "in", palette = "NPG", legend.title=mysubclasses,
+          label = TRUE, lab.col = "white", lab.pos = "in", legend.title=mysubclasses,
           xlab=myclasses, ylab="counts")
 p + theme_minimal() + scale_fill_npg() + scale_color_npg()

@@ -1,6 +1,6 @@
 # stacked barplot with ggplot2
 library(ggpubr)
-library(ggsci)
+library(ggsci) # this package loads scientific journals palettes
 
 myclasses = "classes"
 mysubclasses = "subclasses"

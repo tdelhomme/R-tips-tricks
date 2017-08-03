@@ -1,5 +1,7 @@
 # stacked barplot with ggplot2
 library(ggpubr)
+library(plyr)
+library(dplyr)
 library(ggsci) # this package loads scientific journals palettes
 
 myclasses = "classes"

@@ -15,6 +15,11 @@
   ## Pretty plots with ggplot 2
 
   1. [Stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/stacked_barplot.r): barplot with respect to two factors  
+  9aug2017: use the last dev version from github of the `ggpubr` package to avoid previous bug reported [here](https://github.com/kassambara/ggpubr/issues/20):
+  ```
+  library(devtools)
+  install_github("kassambara/ggpubr")
+  ```
 
 ![stacked_barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/examples/stacked_barplot.png)
 

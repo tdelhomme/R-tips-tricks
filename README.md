@@ -1,16 +1,17 @@
 # R-tips-tricks
 
-
-
 ### This repository contains piece of R code. The code:
 
-  * can be used by any type of data
+  * can be used by any type of data (in theory...)
   * was already tested
   * minimises the number of packages required
   * is open to suggestions and changes  
 
-
   # Table of Contents
+
+  ## Pretty plots with R basic librairies
+
+  1. [Scaled stacked barplot](): barplot with respect to two factors, scaled to sum to 1 for x factor. Need to read a table, and define 2 variables for classes (in x) and subclasses (in y).
 
   ## Pretty plots with ggplot 2
 

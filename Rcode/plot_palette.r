@@ -1,9 +1,13 @@
 # plot_palette is a function to add a continuous color palette to an exising plot
 
 plot_palette <- function(topright=FALSE, cut_max_qvals=100, palette=rev(rainbow(cut_max_qvals+1,start=0, end=4/6)),
-                         xmin=par("usr")[1], xmax=par("usr")[2], ymin=par("usr")[3], ymax=par("usr")[4], nb_levels=6) {
-  xright=xmin+(xmax-xmin)*(1-0.9)
-  xleft=xmin+(xmax-xmin)*(1-0.94)
+                         nb_levels=6, xright=NULL) {
+  xmin=par("usr")[1]
+  xmax=par("usr")[2]
+  ymin=par("usr")[3]
+  ymax=par("usr")[4]
+  if(is.null(xright)) xright=xmin+(xmax-xmin)*(1-0.9)
+  xleft=xright - 0.04*(xmax-xmin)
   if(topright){xright=xmin+(xmax-xmin)*0.9;xleft=xmin+(xmax-xmin)*0.94}
   ybottom=ymin+(ymax-ymin)*0.72
   ytop=ymin+(ymax-ymin)*0.94

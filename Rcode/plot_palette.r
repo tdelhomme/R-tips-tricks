@@ -14,7 +14,7 @@ plot_palette <- function(topright=FALSE, cut_max_qvals=100, palette=rev(rainbow(
 
   rasterImage(as.raster(matrix(rev(palette), ncol=1)),xright,ybottom,xleft,ytop )
   rect(xright ,ybottom ,xleft,ytop )
-  if(is.null(main_pos)) (xright+xleft)/2
+  if(is.null(main_pos)) main_pos=(xright+xleft)/2
   text(x=main_pos, y = ytop+(ytop-ybottom)*0.1, labels = pal_main, cex=0.8)
   keep_labels=seq(0,cut_max_qvals,l=nb_levels)
   keep_labels_pos=seq(ybottom,ytop,l=length(keep_labels))

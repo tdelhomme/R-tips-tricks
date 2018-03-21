@@ -8,7 +8,7 @@ plot_palette <- function(topright=FALSE, cut_max_qvals=100, palette=rev(rainbow(
   ybottom=ymin+(ymax-ymin)*0.72
   ytop=ymin+(ymax-ymin)*0.94
 
-  rasterImage(as.raster(matrix(rev(palette), ncol=1)),xright ,ybottom ,xleft,ytop )
+  rasterImage(as.raster(matrix(rev(palette), ncol=1)),xright,ybottom,xleft,ytop )
   rect(xright ,ybottom ,xleft,ytop )
   text(x=(xright+xleft)/2, y = ytop+(ytop-ybottom)*0.1, labels = "QVAL", cex=0.8)
   keep_labels=seq(0,cut_max_qvals,l=nb_levels)

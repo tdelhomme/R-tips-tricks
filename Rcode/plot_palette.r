@@ -1,7 +1,7 @@
 # plot_palette is a function to add a continuous color palette to an exising plot
 
 plot_palette <- function(topright=FALSE, cut_max_qvals=100, palette=rev(rainbow(cut_max_qvals+1,start=0, end=4/6)),
-                         nb_levels=6, xright=NULL) {
+                         nb_levels=6, xright=NULL, pal_main=NULL) {
   xmin=par("usr")[1]
   xmax=par("usr")[2]
   ymin=par("usr")[3]
@@ -14,7 +14,7 @@ plot_palette <- function(topright=FALSE, cut_max_qvals=100, palette=rev(rainbow(
 
   rasterImage(as.raster(matrix(rev(palette), ncol=1)),xright,ybottom,xleft,ytop )
   rect(xright ,ybottom ,xleft,ytop )
-  text(x=(xright+xleft)/2, y = ytop+(ytop-ybottom)*0.1, labels = "QVAL", cex=0.8)
+  text(x=(xright+xleft)/2, y = ytop+(ytop-ybottom)*0.1, labels = pal_main, cex=0.8)
   keep_labels=seq(0,cut_max_qvals,l=nb_levels)
   keep_labels_pos=seq(ybottom,ytop,l=length(keep_labels))
   tick_width=-(xleft-xright)/5

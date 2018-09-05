@@ -7,11 +7,15 @@ library(ggsci) # this package loads scientific journals palettes
 myclasses = "classes"
 mysubclasses = "subclasses"
 
+dataframe = data.frame(n=c(50,10,30,30),
+               stat1=c("Y","O","Y","O"),
+               stat2=c("R","R","V","V"))
+
 df_transform <- function(df, classes, subclasses){
   colnames(df)[which(colnames(df)==classes)] = "cl"
   colnames(df)[which(colnames(df)==subclasses)] = "scl"
   colnames(df)[which(colnames(df) != "cl" & colnames(df) != "scl")][1] = "len"
-  res = arrange(aggregate(len ~ cl + scl, df, length), cl, len)
+  res = df #arrange(aggregate(len ~ cl + scl, df, length), cl, len)
   ddply(res, "cl", transform, ylabel_pos = cumsum(len) )
 }
 

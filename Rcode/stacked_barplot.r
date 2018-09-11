@@ -4,8 +4,8 @@ library(plyr)
 library(dplyr)
 library(ggsci) # this package loads scientific journals palettes
 
-myclasses = "classes"
-mysubclasses = "subclasses"
+myclasses = "stat1"
+mysubclasses = "stat2"
 
 dataframe = data.frame(n=c(50,10,30,30),
                stat1=c("Y","O","Y","O"),

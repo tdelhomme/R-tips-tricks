@@ -11,7 +11,7 @@
 
   ## Pretty plots with R basic librairies
 
-  1. [Scaled stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/scaled_stacked_barplot.r): barplot with respect to two factors, scaled to sum to 1 for x factor. Need to read a table, and define 2 variables for classes (in x) and subclasses (in y).
+  1. [Scaled stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/scaled_stacked_barplot_VCF.r): barplot with respect to two factors, scaled to sum to 1 for x factor. Need to read a table, and define 2 variables for classes (in x) and subclasses (in y).
 
 ![sclaled stacked_barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/examples/scaled_stacked_barplot.png)
 

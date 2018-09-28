@@ -6,7 +6,7 @@ my_table_col_prop = "" # here define the name of the column that contains names_
 
 l = lapply(1:(length(xclasses)-1), function(i){
   cl = xclasses[i:(i+1)]
-  t = table(my_table[which(my_table$my_table_col>=cl[1] & my_table$my_table_col<cl[2]),my_table_col_prop])[names_subclasses]
+  t = table(my_table[which(my_table[,my_table_col]>=cl[1] & my_table[,my_table_col]<cl[2]),my_table_col_prop])[names_subclasses]
   t[which(is.na(t))] = 0 # set 0 if nothing in the class
   names(t) = names_subclasses # correct names, because if NA in the table, the name was not kept
   t / sum(t) # return the result

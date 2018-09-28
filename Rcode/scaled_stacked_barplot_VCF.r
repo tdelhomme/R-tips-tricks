@@ -2,6 +2,7 @@ my_table = read.table("my_input.txt", stringsAsFactors=F, header=T, sep="\t")
 xclasses = seq(0,1,by=0.1) # here define the x-axis of the plot (classes)
 my_table_col = "" # here define the column of my_table where values will be compared to xclasses
 names_subclasses = c("") # here define the names (to order and control for NA in proportion table) of subclasses
+my_table_col_prop = "" # here define the name of the column that contains names_subclasses values
 
 l = lapply(1:(length(xclasses)-1), function(i){
   cl = xclasses[i:(i+1)]

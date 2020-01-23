@@ -1,3 +1,4 @@
+# my_table should contains 2 columns, one for the my_table_col_prop values and one for the my_table_col values
 my_table = read.table("my_input.txt", stringsAsFactors=F, header=T, sep="\t")
 xclasses = seq(0,1,by=0.1) # here define the x-axis of the plot (classes)
 my_table_col = "" # here define the column of my_table where values will be compared to xclasses

@@ -35,3 +35,7 @@
   ## Performance testing
 
   1. [compilation of function](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/compare_compilation.r): use `compiler` package to compile an R function and use `microbenchmark` package to repeat both compiled and not compiles functions `n` times to compute time statistics. Plotting of results is done with `ggplot2`.
+  
+  ## TCGA data
+  
+  1. [TCGA IDs to barcodes](): this script takes in input a txt file and change all TCGA IDs (e.g. 5c1d7b4c-7c3b-4d20-bb38-c4451313dc18) to its corresponding barcode (e.g. TCGA-18-3409). This can help handling TCGA files containing IDs likes focal-level CNV files.

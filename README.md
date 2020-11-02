@@ -42,3 +42,18 @@
   ```
   Rscript TCGA_IDs_to_barcodes.R --help
   ```
+
+## biomaRt package 
+ 1. Get location from SNP RS identifier:
+ ```
+ library(biomaRt)
+
+snp_mart = useMart("ENSEMBL_MART_SNP", dataset="hsapiens_snp")
+
+snp_ids = c("rs16828074", "rs17232800")
+snp_attributes = c("refsnp_id", "chr_name", "chrom_start")
+
+snp_locations = getBM(attributes=snp_attributes, filters="snp_filter", 
+                      values=snp_ids, mart=snp_mart)
+
+ ```

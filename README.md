@@ -38,7 +38,7 @@
   
   ## TCGA data
   
-  1. [TCGA IDs to barcodes](): this script takes in input a txt file and change all TCGA IDs (e.g. 5c1d7b4c-7c3b-4d20-bb38-c4451313dc18) to its corresponding barcode (e.g. TCGA-18-3409) IN THE HEADER. This can help handling TCGA files containing IDs likes focal-level CNV files. To check options: 
+  1. [TCGA IDs to barcodes](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/TCGA_IDs_to_barcodes.R): this script takes in input a txt file and change all TCGA IDs (e.g. 5c1d7b4c-7c3b-4d20-bb38-c4451313dc18) to its corresponding barcode (e.g. TCGA-18-3409) IN THE HEADER. This can help handling TCGA files containing IDs likes focal-level CNV files. To check options: 
   ```
   Rscript TCGA_IDs_to_barcodes.R --help
   ```

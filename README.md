@@ -57,3 +57,5 @@ snp_locations = getBM(attributes=snp_attributes, filters="snp_filter",
                       values=snp_ids, mart=snp_mart)
 
  ```
+
+## Useful small bunches of code

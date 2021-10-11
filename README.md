@@ -58,4 +58,9 @@ snp_locations = getBM(attributes=snp_attributes, filters="snp_filter",
 
  ```
 
+**Note:** Last piece of code is now working only in R v4. Easier way to to that using `gprofiler2` package: 
+```
+gprofiler2::gsnpense(query = x) # with x the vector of rsIDs
+```
+
 ## Pieces of code

@@ -65,3 +65,4 @@ gprofiler2::gsnpense(query = x) # with x the vector of rsIDs
 
 ## Random tips
 
+* Convert empty elements in a list into NAs: `is.na(mylist) <- lengths(mylist) == 0`

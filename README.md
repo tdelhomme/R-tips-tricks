@@ -63,4 +63,5 @@ snp_locations = getBM(attributes=snp_attributes, filters="snp_filter",
 gprofiler2::gsnpense(query = x) # with x the vector of rsIDs
 ```
 
-## Pieces of code
+## Random tips
+

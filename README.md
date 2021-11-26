@@ -42,7 +42,9 @@
   ```
   Rscript TCGA_IDs_to_barcodes.R --help
   ```
-  2. [GDC file ID to the case (submitter ID)](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/GDCfileID_to_case.R): this R function will return the submitter ID given a particular GDC file ID. Modified from [this chunk](https://seandavi.github.io/post/2017-12-29-genomicdatacommons-id-mapping/). The select operator can be switched to one of those in the _file_ fields, [here](https://docs.gdc.cancer.gov/API/Users_Guide/Appendix_A_Available_Fields/#file-fields).
+  2. [GDC file ID to the case (submitter ID)](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/GDCfileID_to_case.R): this R function will return the submitter ID given a particular GDC file ID. Modified from [this chunk](https://seandavi.github.io/post/2017-12-29-genomicdatacommons-id-mapping/). The select operator can be switched to one of those in the _file_ fields, [here](https://docs.gdc.cancer.gov/API/Users_Guide/Appendix_A_Available_Fields/#file-fields). 
+  
+  Note: for CPTAC, metadata can then be found searching in the [CPTAC catalog](https://github.com/ding-lab/CPTAC3.catalog/blob/master/CPTAC3.Catalog.dat)
  
   
 

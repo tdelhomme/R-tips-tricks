@@ -8,6 +8,17 @@
   * is open to suggestions and changes  
 
   # Table of Contents
+  
+  ## TIPS -- don't fall in trouble!
+  1. order a vector using another one which is a factor
+  ```
+  # this works
+  vect1[as.character(vect2)]
+  
+  # this does not work
+  vect1[vect2]
+
+  ```
 
   ## Pretty plots with R basic librairies
 

@@ -79,6 +79,9 @@ snp_locations = getBM(attributes=snp_attributes, filters="snp_filter",
 gprofiler2::gsnpense(query = x) # with x the vector of rsIDs
 ```
 
+ 2. Get SNPs in linkage desequilibrum using 1000genomes and a list of input SNPs
+ 
+ Script is [here](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/get_SNPs_in_LD.R)
 
 
 ## Random tips

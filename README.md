@@ -59,8 +59,8 @@
  
   
 
-## biomaRt package 
- 1. Get location from SNP RS identifier:
+## Working with germline SNPs 
+ 1. Get location from SNP RS identifier using biomarRt package:
  ```
  library(biomaRt)
 
@@ -78,6 +78,8 @@ snp_locations = getBM(attributes=snp_attributes, filters="snp_filter",
 ```
 gprofiler2::gsnpense(query = x) # with x the vector of rsIDs
 ```
+
+
 
 ## Random tips
 

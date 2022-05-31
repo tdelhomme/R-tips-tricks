@@ -12,6 +12,7 @@ get_LD_snps <- function(snp, mytoken, r2=0.3, distance=50000){
 
 all_snps = as.character(read.table(input_file, h=T, stringsAsFactors = F)[,1]) #input_file should be a tab delimited file with first column=RS IDs
   
+# better is to check the NAs and try again the request -- NEED TO BE ADDED
 for(snp in all_snps){
   print(paste(date(), " working on snp: ", snp, sep=""))
   restmp = try(get_LD_snps(snp))

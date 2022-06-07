@@ -46,7 +46,7 @@
   ## Performance 
 
   1. [Testing performance -- compilation of function](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/compare_compilation.r): use `compiler` package to compile an R function and use `microbenchmark` package to repeat both compiled and not compiles functions `n` times to compute time statistics. Plotting of results is done with `ggplot2`.
-  2. [Efficient grep in a file using parallel]
+  2. [Efficient grep in a file using parallel](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/grep_parallel):
   
   ## TCGA data
   

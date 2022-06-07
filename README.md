@@ -43,9 +43,9 @@
 
   1. [plot palette]((https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/plot_palette.r)): function to add to an existing plot a palette of continous colors describing a particular variable. 
 
-  ## Performance testing
+  ## Performance 
 
-  1. [compilation of function](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/compare_compilation.r): use `compiler` package to compile an R function and use `microbenchmark` package to repeat both compiled and not compiles functions `n` times to compute time statistics. Plotting of results is done with `ggplot2`.
+  1. [Testing performance -- compilation of function](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/compare_compilation.r): use `compiler` package to compile an R function and use `microbenchmark` package to repeat both compiled and not compiles functions `n` times to compute time statistics. Plotting of results is done with `ggplot2`.
   
   ## TCGA data
   

@@ -1,4 +1,5 @@
 # 1. Get reference base from position and fasta file
+# note: this could be easily ameliorated using parallel 
 
 fasta_file <- FaFile(file='Homo_sapiens_assembly19.fasta')
 gr1 <- GRanges(chrom,IRanges(start=start, end=end))

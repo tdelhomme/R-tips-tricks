@@ -10,6 +10,9 @@
 #
 # FROM: http://www.cookbook-r.com/Graphs/Multiple_graphs_on_one_page_(ggplot2)/
 #
+# note: see ggpubr functions that can do the same: http://www.sthda.com/english/articles/24-ggpubr-publication-ready-plots/81-ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page/
+
+
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
   library(grid)
 

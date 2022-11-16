@@ -26,7 +26,7 @@
 
 ![sclaled stacked_barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/examples/scaled_stacked_barplot.png)
 
-  ## Pretty plots with ggplot 2
+  ## Pretty plots with ggplot2/ggpubr package
 
   1. [Stacked barplot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/stacked_barplot.r): barplot with respect to two factors  
   9aug2017: use the last dev version from github of the `ggpubr` package to avoid previous bug reported [here](https://github.com/kassambara/ggpubr/issues/20):

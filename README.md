@@ -39,6 +39,14 @@
 
   2. [multiple plot](https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/multiplot.r): function to plot multiple panels with ggplot2
 
+  3. Multiple ggplot in the same page:
+  ```
+  p1 <- gghistogram() # put your code inside
+  p2 <- ggline() # put your code inside
+  p3 <- ggboxplot() # put your code inside
+  ggarrange(p1, p2, p3, labels = c("A", "B", "C"), ncol = 2, nrow = 2)
+  ```
+
   ## Plot home-made functions
 
   1. [plot palette]((https://github.com/tdelhomme/R-tips-tricks/blob/master/Rcode/plot_palette.r)): function to add to an existing plot a palette of continous colors describing a particular variable. 
